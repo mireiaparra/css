@@ -19,6 +19,7 @@ body {
   width: 300px;
   background: #ccefff;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
 }
 
 .layer-1 {
@@ -252,32 +253,84 @@ right: 30px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  background: rgb(10, 10, 30);
   width: 150px;
   height: 120px;
   bottom: 0;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.layer-8 > .left-lawn {
+  background:rgb(38, 151, 15);
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+  display: inline-block;
+  height: 70%;
+  left: 0;
+  position: absolute;
+  width: 80px;
+}
+
+.layer-8 > .center-lawn {
+  background:rgb(38, 151, 15);
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+  display: inline-block;
+  height: 100%;
+  left: 60px;
+  position: absolute;
+  width: 80px;
+}
 .layer-9 {
   z-index: 9;
   left: 0;
-  background: rgb(27, 27, 54);
   width: 90px;
   height: 100px;
   bottom: 0;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  overflow: hidden;
 }
 
+.layer-9 > .right-cloud{
+  background: white;
+  width: 70px;
+  height: 70%;
+  position: absolute;
+  bottom: -10px;
+  left: 50px;
+  border-radius: 0 40px 40px 0;
+}
+
+.layer-9 > .left-cloud {
+  background: white;
+  border-radius: 40px 40px 0 0;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 80px;
+}
 .layer-10 {
   z-index: 10;
   right: 0;
-  background: rgb(126, 126, 176);
   width: 120px;
-  height: 100px;
+  height: 120px;
   bottom: 0;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.layer-10 > .right-cloud_10{
+  background: white;
+  border-radius: 40px 40px 0 0;
+  display: inline-block;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  width: 90px;
+}
+.layer-10 > .left-cloud_10 {
+  background: white;
+  width: 80px;
+  height: 70%;
+  position: absolute;
+  bottom: -10px;
+  right: 50px;
+  border-radius: 40px 0 0 40px;
 }
 
 input:checked {
